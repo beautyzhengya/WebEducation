@@ -1,0 +1,27 @@
+#top3 {
+				border-bottom: 2px solid #1E62A3;
+			}
+			.nav {
+				border:none;
+				margin: 0 15px;
+			}
+			
+			.nav-tabs>li {
+				background: #fff;
+				float: left;
+				margin: 0;				
+			}
+			.nav-tabs>li:first-child {
+				border-top: 1px solid #1E62A3;	
+				border-left: 1px solid #1E62A3;	
+				border-right: 1px solid #1E62A3;
+				border-bottom: 1px solid #4489CA;			
+					
+			}
+			#top3 #container .nav-tabs>li.active>a, #top3 #container .nav-tabs>li.active>a:focus,#top3 #container .nav-tabs>li.active>a:hover {
+				cursor: default;
+				background-color: #4489CC; 
+				border: none; 
+				border-bottom-color: transparent; 
+				color: #fff;
+			}

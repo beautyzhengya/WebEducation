@@ -1,0 +1,39 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+		img {
+			display: none;
+		}
+		
+	</style>
+	<body>
+		<div class="pro-img">
+			<img style="display:block;" src="../images/index/3.png" alt="">
+			<img src="../images/index/1.png" alt="">
+			<img src="../images/index/2.png" alt="">
+		</div>
+		
+		<ul>
+			<li><a href="javascript:void(0)">1</a></li>
+			<li><a href="javascript:void(0)">2</a></li>
+			<li><a href="javascript:void(0)">3</a></li>
+		</ul>		
+		
+		<script>
+			var imgs = document.getElementsByTagName('img'),
+				li = document.getElementsByTagName('li')
+				len = li.length;
+
+			for (var i = 0; i < len; i++) {
+				! function(i) {
+					li[i].onclick = function() {
+						for (var j = 0; j < len; j++) {
+							imgs[j].style.display = 'none'
+						}
+						imgs[i].style.display = 'block';
+					};
+				}(i)
+			}
+		</script>
+	</body>
+</html>

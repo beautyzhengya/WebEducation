@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		   
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+		    <title>Title</title>
+		    <style>
+			#pic-show {
+				background: url(../images/index/1.png) no-repeat;
+				width: 400px;
+				height: 320px;
+				cursor: pointer;
+				background: #000;
+			}
+
+			img {
+				width: 400px;
+				height: 320px;
+				margin-top: 20px;
+			}
+		</style>
+		     <script src="js/jquery-3.3.1.js"></script>
+	</head>
+	<body>
+		    <div id="pic-show"></div>
+		    <img src="images/1.jpg" />
+		
+		<script src="../lib/jquery/jquery-3.3.1.js"></script>
+		<script src="../lib/bootstrap/js/bootstrap.js"></script>
+		    <script>
+			$(document).ready(function(e) {
+				//div css 修改css background-image
+				$("#pic-show").hover(function() {
+					$(this).css("background-image", "url(../images/index/2.png)");
+				}, function() {
+					$(this).css("background-image", "url(../images/index/1.png)");
+				});
+				
+				//image attr 修改属性
+				$("img").hover(function() {
+					$(this).attr("src", "../images/index/2.png");
+				}, function() {
+					$(this).attr("src", "../images/index/1.png");
+				});
+			});
+		</script>
+	</body>
+</html>
